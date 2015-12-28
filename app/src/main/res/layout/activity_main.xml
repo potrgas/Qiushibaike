@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+    android:id="@+id/sliding_pane_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        app:headerLayout="@layout/navigation_header"
+        app:itemTextAppearance="?android:textAppearanceLarge"
+        app:menu="@menu/menu_navigation"
+        >
+
+
+    </android.support.design.widget.NavigationView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <com.portgas.qiushibaike.viewPagers.MainViewPager
+            android:id="@+id/main_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+        </com.portgas.qiushibaike.viewPagers.MainViewPager>
+    </LinearLayout>
+
+
+</android.support.v4.widget.SlidingPaneLayout>
